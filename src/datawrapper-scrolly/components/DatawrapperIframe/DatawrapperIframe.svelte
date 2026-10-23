@@ -24,7 +24,8 @@
     top: 0;
     display: flex;
     width: 100%;
-    height: 100%;
+    // FIX for chart height scrolling when tall
+    // height: 100%;
     align-items: center;
     justify-content: center;
     background: white;
