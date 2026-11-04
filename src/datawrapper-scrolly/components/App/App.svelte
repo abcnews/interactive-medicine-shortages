@@ -71,4 +71,33 @@
     width: 100%;
     height: 100%;
   }
+
+  :global {
+    .scrollyteller-wrapper .scrollyteller {
+      @media screen and (max-height: 889px) {
+        margin-bottom: 100px !important;
+      }
+
+      @media screen and (max-height: 778px) {
+        margin-bottom: 170px !important;
+      }
+
+      @media screen and (max-height: 667px) {
+        margin-bottom: 250px !important;
+      }
+
+      @media screen and (max-height: 600px) {
+        margin-bottom: 270px !important;
+      }
+
+      @media screen and (max-height: 550px) {
+        margin-bottom: 300px !important;
+      }
+      .viz.viz--resized {
+        @media screen and (max-height: 667px) {
+          top: 10px;
+        }
+      }
+    }
+  }
 </style>
