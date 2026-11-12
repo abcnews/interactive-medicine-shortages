@@ -34,10 +34,13 @@
     </p>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
+    <script type="module">
+      window.dispatchEvent(new CustomEvent("interactive:ready"));
+    </script>
     <script>
-      setTimeout(() => {
+      window.addEventListener("interactive:ready", (event) => {
         window.dispatchEvent(new CustomEvent("odyssey:api"));
-      }, 500);
+      });
     </script>
   </body>
 </html>
